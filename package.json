@@ -1,0 +1,41 @@
+{
+  "name": "verbart.gihub.io",
+  "version": "0.0.1",
+  "author": "Artem Verbat",
+  "homepage": "https://github.com/verbart/verbart.gihub.io#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verbart/verbart.gihub.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/verbart/verbart.gihub.io/issues"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/gulp",
+    "build": "NODE_ENV=production ./node_modules/.bin/gulp build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.2",
+    "browserify": "^13.1.1",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
