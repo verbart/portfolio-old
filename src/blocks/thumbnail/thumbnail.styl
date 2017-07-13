@@ -5,7 +5,7 @@
   padding-bottom @width
   margin -3% 1%
   background url('../images/desktop-frame.png') center / 100% auto no-repeat
-  transition .4s
+  transition .2s
   @media (max-width 1200px)
     width calc(33.3333% - 2%)
     padding-bottom @width
@@ -15,30 +15,36 @@
   @media (max-width 320px)
     width calc(100% - 2%)
     padding-bottom @width
-  &:hover
-    transform scale(1.1)
-    .thumbnail__vail
-      opacity 1
   &__desktop, &__vail
     position absolute
+  &__desktop
     top 24%
     bottom 28%
     left 12%
     right 12%
-  &__desktop
+    z-index 10
     background-position center
     background-size cover
     background-repeat no-repeat
+    transition .2s
+    &:hover
+      .thumbnail__vail
+        opacity 1
+        background-position 50px 50px, 50px 50px
   &__vail
+    top 0
+    bottom 0
+    left 0
+    right 0
     display flex
     align-items center
     justify-content center
     opacity 0
-    background rgba(#bebebe, .8)
+    background-image linear-gradient(rgba(#bebebe, .8), transparent), linear-gradient(0deg, rgba(#bebebe, .8), transparent)
     font-size 40px
     text-align center
     color #000
-    transition .4s
+    transition .2s
   &__links
     position absolute
     bottom 0

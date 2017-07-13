@@ -1,32 +1,20 @@
 doctype html
 html
-    head
-        meta(charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        link(rel='stylesheet', href='./dist/css/style.css')
-        title Portfolio by Artem Verbat
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='./dist/css/style.css')
+    title Portfolio by Artem Verbat
 
 body.page
-    include blocks/header/header
-    .container.text_center
-        -
-            const sites = [
-                {
-                    link: 'https://verbart.github.io/spectral/dist',
-                    preview: 'spectral.png'
-                },
-                 {
-                    link: 'https://verbart.github.io/easylang/dist',
-                    preview: 'easylang.png'
-                },
-                 {
-                    link: 'https://verbart.github.io/strata/dist',
-                    preview: 'strata.png'
-                }
-            ];
+  include blocks/header/header
 
-        for site in sites
-            a(href=site.link).thumbnail
-                .thumbnail__desktop(style=`background-image: url(dist/images/${site.preview})`)
-                .thumbnail__vail
-                    i.fa.fa-external-link(aria-hidden='true')
+  -
+    const works = require('./src/data/works.json');
+
+  .container.text_center
+    for work in works
+      a(href=work.link target='_blank').thumbnail
+        .thumbnail__desktop(style='background-image: url(/dist/images/works/' + work.preview + ')')
+          .thumbnail__vail
+            i.fa.fa-external-link(aria-hidden='true')

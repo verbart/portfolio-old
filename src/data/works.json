@@ -1,0 +1,26 @@
+[
+  {
+    "link": "http://bigfix.biz",
+    "preview": "bigfix.png"
+  },
+  {
+    "link": "http://cryptinvest.biz",
+    "preview": "cryptinvest.png"
+  },
+  {
+    "link": "https://verbart.github.io/business-landing/dist",
+    "preview": "business-landing.png"
+  },
+  {
+    "link": "https://verbart.github.io/spectral/dist",
+    "preview": "spectral.png"
+  },
+  {
+    "link": "https://verbart.github.io/easylang/dist",
+    "preview": "easylang.png"
+  },
+  {
+    "link": "https://verbart.github.io/strata/dist",
+    "preview": "strata.png"
+  }
+]

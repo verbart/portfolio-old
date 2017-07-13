@@ -1,3 +1,5 @@
 node_modules
-.log
+.gulp
 .idea
+*.log
+package-lock.json
