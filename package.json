@@ -1,14 +1,14 @@
 {
-  "name": "verbart.gihub.io",
+  "name": "portfolio-old",
   "version": "0.0.1",
   "author": "Artem Verbat",
-  "homepage": "https://github.com/verbart/verbart.gihub.io#readme",
+  "homepage": "https://github.com/verbart/portfolio-old#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/verbart/verbart.gihub.io.git"
+    "url": "git+https://github.com/verbart/portfolio-old.git"
   },
   "bugs": {
-    "url": "https://github.com/verbart/verbart.gihub.io/issues"
+    "url": "https://github.com/verbart/portfolio-old/issues"
   },
   "scripts": {
     "start": "NODE_ENV=development ./node_modules/.bin/gulp",
